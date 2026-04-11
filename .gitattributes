@@ -1,0 +1,6 @@
+*.ipynb linguist-vendored
+*.csv linguist-vendored
+
+*.html linguist-detectable
+*.js linguist-detectable
+*.py linguist-detectable

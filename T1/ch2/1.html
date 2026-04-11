@@ -1,0 +1,28 @@
+<html>
+
+<body>
+    <p id="p1"> Hello</p>
+    <button onclick="fun1()">Increase</button>
+    <script>
+        let font = 15;  // Global font size starting value
+        let p1 = document.getElementById('p1');  // Get reference to the <p> element
+        let intervalId;  // To store the interval ID for clearing later
+
+        function fun(size) {
+            p1.style.fontSize = size + 'px';  // Add 'px' units
+            p1.style.color = "blue";
+        }
+
+        function fun1() {
+            intervalId = setInterval(function () {
+                if (font <= 50) {
+                    fun(font++);  // Pass the current font value and increment
+                } else {
+                    clearInterval(intervalId);  // Stop the interval when done
+                }
+            }, 1000);
+        }
+    </script>
+</body>
+
+</html>

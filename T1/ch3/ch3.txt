@@ -1,6 +1,0 @@
-# Event module
-emit
-on/addListener
-removeListener
-removeAllListener
-listenerCount
